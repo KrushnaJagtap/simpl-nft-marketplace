@@ -24,7 +24,7 @@ import {
   AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogContent,
-  AlertDialogOverlay,
+  DialogOverlay,
   useDisclosure,
   Menu,
   MenuItem,

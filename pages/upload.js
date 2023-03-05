@@ -37,7 +37,7 @@ const Upload = () => {
   const networkMismatch = useNetworkMismatch();
   const [, switchNetwork] = useNetwork();
   const sdk = useSDK();
-  const alert = useToast();
+  const  = useToast();
   const initRef = React.useRef();
 
   const [creatingListing, setCreatingListing] = useState(false);
@@ -122,7 +122,7 @@ const Upload = () => {
       }
     } catch (error) {
       console.error(error);
-      alert({
+      ({
           title: 'Upload Gagal.',
           description: "Upload NFT gagal. Check the console for more details",
           status: 'error',
@@ -149,7 +149,7 @@ const Upload = () => {
         },
         {
           onSuccess: (tx) => {
-              alert({
+              ({
                   title: 'Success.',
                   description: "NFT berhasil di upload.",
                   status: 'success',
@@ -161,7 +161,7 @@ const Upload = () => {
         }
       );
     } catch (error) {
-      alert({
+      ({
           title: 'Error.',
           description: "NFT gagal di upload.",
           status: 'error',
@@ -185,7 +185,7 @@ const Upload = () => {
         },
         {
           onSuccess: (tx) => {
-              alert({
+              ({
                   title: 'Success.',
                   description: "NFT berhasil di upload.",
                   status: 'success',
@@ -197,7 +197,7 @@ const Upload = () => {
         }
       );
     } catch (error) {
-      alert({
+      ({
           title: 'Error.',
           description: "NFT gagal di upload.",
           status: 'error',

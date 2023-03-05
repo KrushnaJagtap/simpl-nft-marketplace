@@ -101,7 +101,7 @@ const Resell: NextPage = () => {
       if (transactionResult) {
               alert({
                   title: 'Success.',
-                  description: "Listing NFT berhasil...",
+                  description: "NFT listing was successful...",
                   status: 'success',
                   duration: 5000,
                   isClosable: true,
@@ -110,8 +110,8 @@ const Resell: NextPage = () => {
       }
     } catch (error) {
       alert({
-          title: 'Listing Gagal.',
-          description: "Listing NFT gagal. Check the console for more details",
+          title: 'Listing Failed.',
+          description: "Listing NFT fail. Check the console for more details",
           status: 'error',
           duration: 7000,
           isClosable: true,

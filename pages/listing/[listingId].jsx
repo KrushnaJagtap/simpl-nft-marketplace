@@ -137,8 +137,8 @@ export default function ListingPage() {
 
       await marketplace?.buyoutListing(listingId, 1);
       alert({
-          title: 'Berhasil.',
-          description: "Pembelian NFT Berhasil...",
+          title: 'Successfull.',
+          description: "NFT Purchase Successful...",
           status: 'success',
           duration: 6000,
           isClosable: true,
@@ -147,8 +147,8 @@ export default function ListingPage() {
     } catch (err) {
       console.error(err.message);
       alert({
-              title: 'GAGAL',
-			  description: "Pembelian NFT Gagal. Pastikan saldo mencukupi",
+              title: 'FAIL',
+			  description: "NFT Purchase Failed. Make sure the balance is sufficient",
 			  status: 'error',
 			  duration: 6000,
 			  isClosable: true,

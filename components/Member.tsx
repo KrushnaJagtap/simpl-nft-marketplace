@@ -99,7 +99,7 @@ const bgColor = useColorModeValue('white', 'gray.800');
           onSuccess: (data) => {
             alert({
           title: 'Success.',
-          description: "Kartu Member Berhasil di Claim.",
+          description: "Member Card Successfully Claimed.",
           status: 'success',
           duration: 6000,
           isClosable: true,
@@ -108,8 +108,8 @@ const bgColor = useColorModeValue('white', 'gray.800');
           onError: (error) => {
             const e = error;
             alert({
-              title: 'Gagal Claim Member...',
-			  description: "Member claim, Gagal.",
+              title: 'Failed Claim Member...',
+			  description: "Member claim, Failed.",
 			  status: 'error',
 			  duration: 6000,
 			  isClosable: true,
